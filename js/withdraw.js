@@ -19,6 +19,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
 
     if(newWithdrawAmount > previousBalanceTotal){
         alert('Insufficient Balance')
+        return;
     }
     // calculate new balance total
     const newBalanceTotal = previousBalanceTotal-newWithdrawAmount;
